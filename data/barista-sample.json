@@ -1,0 +1,145 @@
+{
+    "name": "Alex Bean",
+    "role": "Coffee Barista & Specialist",
+    "bio": "Passionate about coffee crafting the perfect cup and creating memorable experiences behind the counter.",
+    "title": "Alex Bean - Coffee Barista & Coffee Specialist",
+    "profilePicture": "/barista-sample/alex-bean.jpg",
+    "profileCTA": {
+        "text": "Discover My Coffee Journey",
+        "link": "/about",
+        "backgroundColor": "#4B3621",
+        "textColor": "#ffffff"
+    },
+    "navBar": {
+        "backgroundColor": "#4B3621",
+        "textColor": "#ffffff",
+        "hoverColor": "#D2B48C",
+        "logo": "/barista-sample/coffee-logo.png",
+        "logoText": "Alex Bean Coffee",
+        "links": [
+            {
+                "name": "Home",
+                "path": "/"
+            },
+            {
+                "name": "About",
+                "path": "/about"
+            },
+            {
+                "name": "Work",
+                "path": "/work"
+            },
+            {
+                "name": "Projects",
+                "path": "/projects"
+            }
+        ]
+    },
+    "footer": {
+        "text": "All Rights Reserved",
+        "backgroundColor": "#4B3621",
+        "textColor": "#ffffff"
+    },
+    "socialLinks": {
+        "email": "alex.coffee@example.com",
+        "instagram": "https://instagram.com/alexbeancoffee",
+        "x": "https://twitter.com/alexbeancoffee",
+        "linkedin": "https://linkedin.com/in/alexbeancoffee",
+        "facebook": "https://facebook.com/alexbeancoffee"
+    },
+    "about": {
+        "longbio": "I have dedicated over a decade to the art of coffee-making, working with top coffee chains and hosting exclusive pop-up events. My journey is fueled by a passion for quality beans, innovative brewing, and sustainable practices.",
+        "tab1": {
+            "title": "Education",
+            "content": [
+                {
+                    "maintext": "Certified Barista Course",
+                    "subtext": "Coffee Training Academy"
+                },
+                {
+                    "maintext": "Advanced Latte Art",
+                    "subtext": "Barista Institute"
+                }
+            ]
+        },
+        "tab2": {
+            "title": "Competitions",
+            "content": [
+                {
+                    "maintext": "World Barista Championship",
+                    "subtext": "Participant 2018"
+                },
+                {
+                    "maintext": "National Latte Art Contest",
+                    "subtext": "Winner 2019"
+                }
+            ]
+        },
+        "tab3": {
+            "title": "Workshops",
+            "content": [
+                {
+                    "maintext": "Coffee Brewing Mastery",
+                    "subtext": "Local Coffee Guild"
+                },
+                {
+                    "maintext": "Sustainable Coffee Practices",
+                    "subtext": "Green Bean Initiative"
+                }
+            ]
+        }
+    },
+    "workExperience": [
+        {
+            "company": "Starbucks",
+            "role": "Senior Barista",
+            "duration": "Mar 2020 - Present",
+            "description": "Crafting specialty coffee drinks and mentoring new team members at one of the world's leading coffee chains."
+        },
+        {
+            "company": "Costa Coffee",
+            "role": "Barista",
+            "duration": "Jan 2017 - Feb 2020",
+            "description": "Delivered exceptional service and perfected a variety of coffee beverages in a bustling environment."
+        },
+        {
+            "company": "Blue Bottle Coffee",
+            "role": "Barista",
+            "duration": "Jun 2014 - Dec 2016",
+            "description": "Focused on precision brewing techniques and creating artisanal coffee experiences."
+        },
+        {
+            "company": "Bean There",
+            "role": "Pop-up Coffee Specialist",
+            "duration": "Sep 2013 - May 2014",
+            "description": "Organized and executed pop-up coffee events, introducing innovative blends and interactive brewing sessions."
+        }
+    ],
+    "projects": [
+        {
+            "title": "Coffee Pop-Up Event",
+            "description": "Hosted a series of events showcasing unique brewing techniques and signature coffee blends.",
+            "link": "https://instagram.com/alexbeancoffee/pop-up",
+            "image": "/barista-sample/project-pop-up.jpg"
+        },
+        {
+            "title": "Latte Art Gallery",
+            "description": "An online gallery featuring my best latte art creations and design experiments.",
+            "link": "https://instagram.com/alexbeancoffee/latte-art",
+            "image": "/barista-sample/project-latte-art.jpg"
+        },
+        {
+            "title": "Coffee Blog",
+            "description": "A blog dedicated to coffee trends, brewing tips, and sustainability in the coffee industry.",
+            "link": "https://alexbeancoffee.blog",
+            "image": "/barista-sample/project-blog.jpg"
+        }
+    ],
+    "theme": {
+        "primaryColor": "#A67B5B",
+        "secondaryColor": "#D2B48C",
+        "backgroundColor": "#FFF8F0",
+        "textColor": "#3B2D27",
+        "font": "Inter"
+    }
+}

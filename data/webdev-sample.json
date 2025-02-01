@@ -1,0 +1,148 @@
+{
+    "name": "Jordan Sparks",
+    "role": "Web Frontend Developer",
+    "bio": "Innovative and detail-oriented web frontend developer passionate about crafting engaging, accessible, and high-performance user interfaces.",
+    "title": "Jordan Sparks - Web Frontend Developer",
+    "profilePicture": "/webdev-sample/jordan-sparks.jpg",
+    "profileCTA": {
+        "text": "Explore My Work",
+        "link": "/projects",
+        "backgroundColor": "#004E98",
+        "textColor": "#ffffff"
+    },
+    "navBar": {
+        "backgroundColor": "#004E98",
+        "textColor": "#ffffff",
+        "hoverColor": "#FFD700",
+        "logo": "/webdev-sample/web-logo.png",
+        "logoText": "Jordan Sparks",
+        "links": [
+            {
+                "name": "Home",
+                "path": "/"
+            },
+            {
+                "name": "About",
+                "path": "/about"
+            },
+            {
+                "name": "Work",
+                "path": "/work"
+            },
+            {
+                "name": "Projects",
+                "path": "/projects"
+            }
+        ]
+    },
+    "footer": {
+        "text": "All Rights Reserved",
+        "backgroundColor": "#004E98",
+        "textColor": "#ffffff"
+    },
+    "socialLinks": {
+        "email": "jordan.sparks@example.com",
+        "github": "https://github.com/jordansparks",
+        "linkedin": "https://linkedin.com/in/jordansparks",
+        "x": "https://twitter.com/jordansparks",
+        "instagram": "https://instagram.com/jordansparks"
+    },
+    "about": {
+        "longbio": "With over 8 years of experience in the tech industry, I specialize in designing and implementing responsive, high-performance web applications. I strive to blend innovative design with robust technology to deliver seamless digital experiences.",
+        "tab1": {
+            "title": "Skills",
+            "content": [
+                {
+                    "maintext": "Frontend",
+                    "subtext": "React, JavaScript, Next.js, TypeScript, CSS, GraphQL"
+                },
+                {
+                    "maintext": "UI/UX Design",
+                    "subtext": "Figma, Sketch, Adobe XD"
+                },
+                {
+                    "maintext": "Performance Optimization",
+                    "subtext": "Code splitting, Lazy loading, SEO best practices"
+                }
+            ]
+        },
+        "tab2": {
+            "title": "Certifications",
+            "content": [
+                {
+                    "maintext": "Google UX Design Professional Certificate",
+                    "subtext": "Coursera"
+                },
+                {
+                    "maintext": "React Nanodegree",
+                    "subtext": "Udacity"
+                }
+            ]
+        }
+    },
+    "workExperience": [
+        {
+            "company": "Tech Innovators Inc.",
+            "role": "Senior Frontend Developer",
+            "duration": "Jan 2020 - Present",
+            "description": "Leading a team to architect and build scalable, user-centered web applications using modern frameworks like React and Next.js."
+        },
+        {
+            "company": "Creative Web Solutions",
+            "role": "Frontend Developer",
+            "duration": "May 2016 - Dec 2019",
+            "description": "Developed interactive and responsive web interfaces, optimized for performance and usability across various devices."
+        },
+        {
+            "company": "Digital Spark Agency",
+            "role": "UI/UX Developer",
+            "duration": "Feb 2014 - Apr 2016",
+            "description": "Collaborated with designers and backend developers to implement seamless UI/UX solutions for diverse client projects."
+        },
+        {
+            "company": "CodeCraft Studio",
+            "role": "Junior Frontend Developer",
+            "duration": "Jan 2012 - Jan 2014",
+            "description": "Contributed to the development of client websites with a focus on clean design and consistent performance."
+        }
+    ],
+    "projects": [
+        {
+            "title": "React Dashboard",
+            "description": "A dynamic admin dashboard built with React and TypeScript, emphasizing data visualization and interactivity.",
+            "link": "https://github.com/jordansparks/react-dashboard",
+            "image": "/webdev-sample/project-react-dashboard.jpg"
+        },
+        {
+            "title": "E-commerce Platform",
+            "description": "Developed a scalable e-commerce solution featuring dynamic product listings, shopping cart, and payment integration.",
+            "link": "https://github.com/jordansparks/e-commerce-platform",
+            "image": "/webdev-sample/project-ecommerce.jpg"
+        },
+        {
+            "title": "Personal Portfolio",
+            "description": "A sleek and responsive personal portfolio website showcasing projects and professional experiences.",
+            "link": "https://jordansparks.dev",
+            "image": "/webdev-sample/project-portfolio.jpg"
+        },
+        {
+            "title": "Progressive Web App",
+            "description": "A feature-rich progressive web app leveraging service workers for offline capabilities and enhanced performance.",
+            "link": "https://github.com/jordansparks/pwa-app",
+            "image": "/webdev-sample/project-portfolio.jpg"
+        },
+        {
+            "title": "Interactive Blog Template",
+            "description": "A fully interactive blog template designed with a focus on performance, accessibility, and a seamless reading experience.",
+            "link": "https://github.com/jordansparks/blog-template",
+            "image": "/webdev-sample/project-portfolio.jpg"
+        }
+    ],
+    "theme": {
+        "primaryColor": "#004E98",
+        "secondaryColor": "#FFD700",
+        "backgroundColor": "#F4F7FC",
+        "textColor": "#333333",
+        "font": "Inter"
+    }
+}

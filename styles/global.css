@@ -1,0 +1,10 @@
+
+.fa-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.fa-icon:hover {
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
