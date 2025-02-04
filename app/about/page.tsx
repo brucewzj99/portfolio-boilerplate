@@ -1,14 +1,10 @@
 'use client';
 import { useState } from 'react';
 import profileData from '../../data/profile.json';
-
-interface AboutItem {
-  maintext: string;
-  subtext: string;
-}
+import { ProfileData, AboutItem, AboutSection } from '../types';
 
 export default function About() {
-  const { about, theme } = profileData;
+  const { about, theme } = profileData as ProfileData;
   const { longbio } = about;
   const { primaryColor, secondaryColor, textColor } = theme;
 
@@ -39,7 +35,7 @@ export default function About() {
                   }}
                   className="py-2 px-4 border-b-2 focus:outline-none"
                 >
-                  {about[key].title || key.toUpperCase()}
+                  {(about[key] as AboutSection).title || key.toUpperCase()}
                 </button>
               ))}
             </nav>
@@ -47,7 +43,8 @@ export default function About() {
 
           {/* Tab Content */}
           <div>
-            {activeContent && activeContent.content ? (
+            {activeContent && typeof activeContent !== 'string' &&
+            activeContent.content ? (
               <>
                 {activeContent.content.map((item: AboutItem, index: number) => (
                   <div key={index} className="mb-4">
@@ -64,7 +61,7 @@ export default function About() {
                 ))}
               </>
             ) : (
-              <p style={{ color: textColor }}>{activeContent}</p>
+              <p style={{ color: textColor }}>{activeContent as string}</p>
             )}
           </div>
         </>

@@ -1,21 +1,21 @@
 {
-    "name": "Lena Hart",
-    "role": "Digital Photographer & Visual Storyteller",
-    "bio": "Capturing moments and emotions through my lens, I merge art with technology to create stunning visual narratives.",
-    "title": "Lena Hart - Digital Photographer & Visual Storyteller",
-    "profilePicture": "/photography-sample/lena-hart.jpg",
+    "name": "Jordan Sparks",
+    "role": "Web Frontend Developer",
+    "bio": "Innovative and detail-oriented web frontend developer passionate about crafting engaging, accessible, and high-performance user interfaces.",
+    "title": "Jordan Sparks - Web Frontend Developer",
+    "profilePicture": "/webdev-sample/jordan-sparks.jpg",
     "profileCTA": {
-        "text": "View My Gallery",
-        "link": "/gallery",
-        "backgroundColor": "#222222",
+        "text": "Explore My Work",
+        "link": "/projects",
+        "backgroundColor": "#004E98",
         "textColor": "#ffffff"
     },
     "navBar": {
-        "backgroundColor": "#222222",
+        "backgroundColor": "#004E98",
         "textColor": "#ffffff",
-        "hoverColor": "#D8A47F",
-        "logo": "/photography-sample/photo-logo.png",
-        "logoText": "Lena Hart Photography",
+        "hoverColor": "#FFD700",
+        "logo": "/webdev-sample/web-logo.png",
+        "logoText": "Jordan Sparks",
         "links": [
             {
                 "name": "Home",
@@ -30,132 +30,119 @@
                 "path": "/work"
             },
             {
-                "name": "Gallery",
-                "path": "/gallery"
+                "name": "Projects",
+                "path": "/projects"
             }
         ]
     },
     "footer": {
-        "text": "© All Rights Reserved",
-        "backgroundColor": "#222222",
+        "text": "All Rights Reserved",
+        "backgroundColor": "#004E98",
         "textColor": "#ffffff"
     },
     "socialLinks": {
-        "email": "lena.hart@example.com",
-        "instagram": "https://instagram.com/lena.hart",
-        "flickr": "https://flickr.com/lena.hart",
-        "linkedin": "https://linkedin.com/in/lenahart"
+        "email": "jordan.sparks@example.com",
+        "github": "https://github.com/jordansparks",
+        "linkedin": "https://linkedin.com/in/jordansparks",
+        "x": "https://twitter.com/jordansparks",
+        "instagram": "https://instagram.com/jordansparks"
     },
     "about": {
-        "longbio": "Over the past decade, my passion for photography has taken me across the globe, capturing diverse cultures and breathtaking landscapes. I continuously explore new techniques and creative angles to tell a story with every shot.",
+        "longbio": "With over 8 years of experience in the tech industry, I specialize in designing and implementing responsive, high-performance web applications. I strive to blend innovative design with robust technology to deliver seamless digital experiences.",
         "tab1": {
             "title": "Skills",
             "content": [
                 {
-                    "maintext": "Photography",
-                    "subtext": "Landscape, Portrait, Street, Commercial"
+                    "maintext": "Frontend",
+                    "subtext": "React, JavaScript, Next.js, TypeScript, CSS, GraphQL"
                 },
                 {
-                    "maintext": "Lighting & Composition",
-                    "subtext": "Studio lighting, natural light, creative composition"
+                    "maintext": "UI/UX Design",
+                    "subtext": "Figma, Sketch, Adobe XD"
                 },
                 {
-                    "maintext": "Photo Editing",
-                    "subtext": "Adobe Photoshop, Lightroom, Capture One"
+                    "maintext": "Performance Optimization",
+                    "subtext": "Code splitting, Lazy loading, SEO best practices"
                 }
             ]
         },
         "tab2": {
-            "title": "Workshops & Exhibitions",
+            "title": "Certifications",
             "content": [
                 {
-                    "maintext": "International Photography Expo",
-                    "subtext": "Featured Photographer 2021"
+                    "maintext": "Google UX Design Professional Certificate",
+                    "subtext": "Coursera"
                 },
                 {
-                    "maintext": "Creative Lighting Workshop",
-                    "subtext": "Conducted Masterclass 2020"
+                    "maintext": "React Nanodegree",
+                    "subtext": "Udacity"
                 }
             ]
         }
     },
     "workExperience": [
         {
-            "company": "Freelance",
-            "role": "Lead Photographer",
-            "duration": "Jan 2015 - Present",
-            "description": "Providing professional photography services for events, portraits, and commercial projects."
+            "company": "Tech Innovators Inc.",
+            "role": "Senior Frontend Developer",
+            "duration": "Jan 2020 - Present",
+            "description": "Leading a team to architect and build scalable, user-centered web applications using modern frameworks like React and Next.js."
         },
         {
-            "company": "Studio Lumiere",
-            "role": "Studio Assistant & Photographer",
-            "duration": "Jun 2010 - Dec 2014",
-            "description": "Assisted in day-to-day studio operations and contributed to high-profile photoshoots."
+            "company": "Creative Web Solutions",
+            "role": "Frontend Developer",
+            "duration": "May 2016 - Dec 2019",
+            "description": "Developed interactive and responsive web interfaces, optimized for performance and usability across various devices."
         },
         {
-            "company": "MediaWorks",
-            "role": "Photojournalist",
-            "duration": "Jan 2008 - May 2010",
-            "description": "Covered local events and documented human-interest stories for various media outlets."
+            "company": "Digital Spark Agency",
+            "role": "UI/UX Developer",
+            "duration": "Feb 2014 - Apr 2016",
+            "description": "Collaborated with designers and backend developers to implement seamless UI/UX solutions for diverse client projects."
+        },
+        {
+            "company": "CodeCraft Studio",
+            "role": "Junior Frontend Developer",
+            "duration": "Jan 2012 - Jan 2014",
+            "description": "Contributed to the development of client websites with a focus on clean design and consistent performance."
         }
     ],
-    "gallery": [
+    "projects": [
         {
-            "title": "Urban Landscapes",
-            "image": "/photography-sample/urban-landscapes.jpg",
-            "location": "New York, USA"
+            "title": "React Dashboard",
+            "description": "A dynamic admin dashboard built with React and TypeScript, emphasizing data visualization and interactivity.",
+            "link": "https://github.com/jordansparks/react-dashboard",
+            "image": "/webdev-sample/project-react-dashboard.jpg"
         },
         {
-            "title": "Portrait Magic",
-            "image": "/photography-sample/portrait-magic.jpg",
-            "location": "Paris, France"
+            "title": "E-commerce Platform",
+            "description": "Developed a scalable e-commerce solution featuring dynamic product listings, shopping cart, and payment integration.",
+            "link": "https://github.com/jordansparks/e-commerce-platform",
+            "image": "/webdev-sample/project-ecommerce.jpg"
         },
         {
-            "title": "Nature Wonders",
-            "image": "/photography-sample/nature-wonders.jpg",
-            "location": "Iceland"
+            "title": "Personal Portfolio",
+            "description": "A sleek and responsive personal portfolio website showcasing projects and professional experiences.",
+            "link": "https://jordansparks.dev",
+            "image": "/webdev-sample/project-portfolio.jpg"
         },
         {
-            "title": "City Nightlife",
-            "image": "/photography-sample/city-nightlife.jpg",
-            "location": "Tokyo, Japan"
+            "title": "Progressive Web App",
+            "description": "A feature-rich progressive web app leveraging service workers for offline capabilities and enhanced performance.",
+            "link": "https://github.com/jordansparks/pwa-app",
+            "image": "/webdev-sample/project-portfolio.jpg"
         },
         {
-            "title": "Serenity Beach",
-            "image": "/photography-sample/serenity-beach.jpg",
-            "location": "Malibu, USA"
-        },
-        {
-            "title": "Desert Mirage",
-            "image": "/photography-sample/desert-mirage.jpg",
-            "location": "Sahara, Africa"
-        },
-        {
-            "title": "Mountain Horizon",
-            "image": "/photography-sample/mountain-horizon.jpg",
-            "location": "Swiss Alps"
-        },
-        {
-            "title": "Architectural Marvels",
-            "image": "/photography-sample/architectural-marvels.jpg",
-            "location": "Barcelona, Spain"
-        },
-        {
-            "title": "Garden Bloom",
-            "image": "/photography-sample/garden-bloom.jpg",
-            "location": "Amsterdam, Netherlands"
-        },
-        {
-            "title": "Cultural Fest",
-            "image": "/photography-sample/cultural-fest.jpg",
-            "location": "Rio de Janeiro, Brazil"
+            "title": "Interactive Blog Template",
+            "description": "A fully interactive blog template designed with a focus on performance, accessibility, and a seamless reading experience.",
+            "link": "https://github.com/jordansparks/blog-template",
+            "image": "/webdev-sample/project-portfolio.jpg"
         }
     ],
     "theme": {
-        "primaryColor": "#222222",
-        "secondaryColor": "#D8A47F",
-        "backgroundColor": "#F0F0F0",
+        "primaryColor": "#004E98",
+        "secondaryColor": "#FFD700",
+        "backgroundColor": "#F4F7FC",
         "textColor": "#333333",
-        "font": "Lato"
+        "font": "Inter"
     }
 }

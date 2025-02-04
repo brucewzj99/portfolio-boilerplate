@@ -1,9 +1,12 @@
 'use client';
 import { useState } from 'react';
 import profileData from '../../data/profile.json';
+import { GalleryItem, ProfileData } from '../types';
+import Image from 'next/image';
 
 export default function GalleryPage() {
-  const { gallery } = profileData;
+  const gallery: GalleryItem[] = (profileData as ProfileData).gallery || [];
+
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
   const handleSelectImage = (index: number) => {
@@ -32,16 +35,18 @@ export default function GalleryPage() {
     <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 p-8">
       <h1 className="text-3xl font-bold mb-8">Gallery</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {gallery.map((item, index) => (
+        {gallery.map((item: GalleryItem, index: number) => (
           <div
             key={index}
             className="relative group cursor-pointer"
             onClick={() => handleSelectImage(index)}
           >
             <div className="w-full h-0 pb-[100%] relative overflow-hidden">
-              <img
+              <Image
                 src={item.image}
                 alt={item.title}
+                width={800}
+                height={800}
                 className="absolute top-0 left-0 w-full h-full object-cover"
               />
             </div>
@@ -70,9 +75,11 @@ export default function GalleryPage() {
                 &#10094;
               </button>
             )}
-            <img
+            <Image
               src={gallery[selectedIndex].image}
               alt={gallery[selectedIndex].title}
+              width={800}
+              height={800}
               className="object-contain max-h-[80vh] mb-4"
             />
             {selectedIndex < gallery.length - 1 && (

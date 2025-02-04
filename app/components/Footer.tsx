@@ -10,23 +10,27 @@ import {
   faXTwitter,
   faYoutube,
   faInstagram,
-  faFacebook
+  faFacebook,
+  faFlickr
 } from '@fortawesome/free-brands-svg-icons';
 import profileData from '../../data/profile.json';
+import { SocialLinks } from '../types';
+import { JSX } from 'react';
 
 export default function Footer() {
   const { socialLinks, name } = profileData;
   const currentYear = new Date().getFullYear();
 
   const { backgroundColor, text: footerText, textColor: footerTextColor } = profileData.footer;
-  const socialIcons = {
+  const socialIcons: Record<keyof SocialLinks, JSX.Element> = {
     email: <FontAwesomeIcon icon={faEnvelope} className="fa-icon" />,
     github: <FontAwesomeIcon icon={faGithub} className="fa-icon" />,
     linkedin: <FontAwesomeIcon icon={faLinkedin} className="fa-icon" />,
     x: <FontAwesomeIcon icon={faXTwitter} className="fa-icon" />,
     youtube: <FontAwesomeIcon icon={faYoutube} className="fa-icon" />,
     facebook: <FontAwesomeIcon icon={faFacebook} className="fa-icon" />,
-    instagram: <FontAwesomeIcon icon={faInstagram} className="fa-icon" />
+    instagram: <FontAwesomeIcon icon={faInstagram} className="fa-icon" />,
+    flickr: <FontAwesomeIcon icon={faFlickr} className="fa-icon" />
   };
 
   return (
@@ -52,7 +56,7 @@ export default function Footer() {
                 className="hover:opacity-80 transition-opacity"
                 style={{ color: footerTextColor || '#000000' }}
               >
-                {socialIcons[platform]}
+                {socialIcons[platform as keyof SocialLinks]}
               </a>
             )
           ))}

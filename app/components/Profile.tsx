@@ -1,19 +1,9 @@
 'use client';
-import { useState, useEffect } from 'react';
 import profileData from '../../data/profile.json';
+import { ProfileData } from '../types';
 
 export default function Profile() {
-  const { name, role, bio, profilePicture, profileCTA } = profileData;
-  
-  // Track viewport width to conditionally apply layout changes
-  const [isDesktop, setIsDesktop] = useState<boolean>(false);
-
-  useEffect(() => {
-    const handleResize = () => setIsDesktop(window.innerWidth >= 768);
-    handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  const { name, role, bio, profilePicture, profileCTA } = profileData as ProfileData;
 
   return (
     <div

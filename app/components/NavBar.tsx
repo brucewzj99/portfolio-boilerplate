@@ -3,10 +3,13 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import profileData from '../../data/profile.json';
+import { ProfileData } from '../types';
+import Image from 'next/image';
 
 export default function NavBar() {
-  const { logo, logoText, links, backgroundColor, textColor: navTextColor, hoverColor } = profileData.navBar;
-  const { primaryColor } = profileData.theme;
+  const { navBar, theme } = profileData as ProfileData;
+  const { logo, logoText, links, backgroundColor, textColor: navTextColor, hoverColor } = navBar;
+  const { primaryColor } = theme;
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -22,7 +25,7 @@ export default function NavBar() {
         backgroundColor: backgroundColor || '#FFFFFF',
         color: navTextColor || '#000000',
         '--link-hover-color': hoverColor || primaryColor || '#123123'
-      }}
+      }  as React.CSSProperties & { '--link-hover-color': string } }
     >
       <div className="max-w-7xl mx-auto">
         {/* Desktop Navbar */}
@@ -30,7 +33,7 @@ export default function NavBar() {
           <Link href="/">
             <div className="flex items-center cursor-pointer">
               {logo ? (
-                <img src={logo} alt="Logo" className="h-8" />
+                <Image src={logo} alt="Logo" width={32} height={32} className="h-8" />
               ) : (
                 <span className="text-xl font-bold">{logoText}</span>
               )}
@@ -51,8 +54,8 @@ export default function NavBar() {
             <Link href="/">
               <div className="flex items-center cursor-pointer">
                 {logo ? (
-                  <img src={logo} alt="Logo" className="h-8" />
-                ) : (
+                  <Image src={logo} alt="Logo" width={32} height={32} className="h-8" />
+              ) : (
                   <span className="text-xl font-bold">{logoText}</span>
                 )}
               </div>

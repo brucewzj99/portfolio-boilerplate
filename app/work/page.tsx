@@ -1,12 +1,14 @@
 'use client';
 import profileData from '../../data/profile.json';
+import { ProfileData, WorkExperience } from '../types';
 
 export default function Work() {
-  const { workExperience, theme } = profileData;
-  const { primaryColor, backgroundColor, textColor, secondaryColor } = theme;
+  const { workExperience, theme } = profileData as ProfileData;
+  const { backgroundColor, textColor, secondaryColor } = theme;
+  const workEx: WorkExperience[] = workExperience || [];
 
   // Separate the first work experience and the rest
-  const [firstJob, ...otherJobs] = workExperience;
+  const [firstJob, ...otherJobs] = workEx;
 
   return (
     <div
@@ -30,7 +32,6 @@ export default function Work() {
             </h3>
             <h4 className="text-lg" style={{ color: textColor }}>
               {firstJob.company}
-              {firstJob.location ? ` - ${firstJob.location}` : ''}
             </h4>
             <p className="text-sm" style={{ color: textColor }}>
               {firstJob.duration}
@@ -50,7 +51,7 @@ export default function Work() {
           style={{ backgroundColor: textColor, opacity: 0.5 }}
         ></div>
 
-        {otherJobs.map((work: any, idx: number) => {
+        {otherJobs.map((work: WorkExperience, idx: number) => {
           // Calculate index relative to original array
           const originalIndex = idx + 1;
           const isLeft = originalIndex % 2 === 0;
@@ -72,7 +73,6 @@ export default function Work() {
                     </h3>
                     <h4 className="text-lg" style={{ color: textColor }}>
                       {work.company}
-                      {work.location ? ` - ${work.location}` : ''}
                     </h4>
                     <p className="text-sm" style={{ color: textColor }}>
                       {work.duration}
@@ -119,7 +119,6 @@ export default function Work() {
                     </h3>
                     <h4 className="text-lg" style={{ color: textColor }}>
                       {work.company}
-                      {work.location ? ` - ${work.location}` : ''}
                     </h4>
                     <p className="text-sm" style={{ color: textColor }}>
                       {work.duration}
